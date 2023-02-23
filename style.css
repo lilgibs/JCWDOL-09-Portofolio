@@ -14,20 +14,11 @@ body{
     color: white;
 }
 
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://images6.alphacoders.com/643/643522.jpg);
-    background-size: cover ;
-    background-position: center;
-}
-
-.container{
-    padding: 0 10%
-}
-
-.navbar{
+#navbar{
     background-color: #2f3640;
+    position: fixed;
+    display: block;
+    width: 100%;
 }
 
 nav{
@@ -61,9 +52,22 @@ nav ul li a:hover{
     font-weight: bold;
 }
 
+.container{
+    padding: 0 10%
+}
+
+/* header */
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images6.alphacoders.com/643/643522.jpg);
+    background-size: cover ;
+    background-position: center;
+}
+
 .header-text{
-    margin-top: 15%;
     font-size: 30px;
+    padding: 15% 0;
 }
 
 .header-text h1{
@@ -72,7 +76,6 @@ nav ul li a:hover{
 }
 
 /* About */
-
 #about{
     padding: 80px;
     color:#353b48;
@@ -98,6 +101,11 @@ nav ul li a:hover{
 }
 
 .sub-title{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+#about .sub-title{
     font-size: 60px;
     text-decoration: underline;
     text-decoration-color: #dcdde1;
@@ -109,15 +117,76 @@ nav ul li a:hover{
     margin: 20px 0 40px;
 }
 
+.tab-titles{
+    display : flex;
+    margin: 20px 0 40px;
+}
+
 .tab-links{
+    color:#353b48;
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    text-decoration: none;
+    
 }
 
 .tab-links:hover{
     color: #40739e;
     font-weight: bold;
 }
+
+/* Skills - START*/
+#education{
+    padding: 80px;
+    background-color: #487eb0;
+}
+
+#education .sub-title{
+    text-align: center;
+    color: #f5f6fa;
+    font-size: 60px;
+    text-decoration-color: #40739e;
+}
+
+.education-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.education-box{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.education-box img{
+    height: 100px;
+}
+
+.education-box-col-1{
+    margin-right: 10px;
+}
+
+.education-box-col-2{
+
+}
+
+.education-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-box h3{
+    margin-bottom: 5px;
+}
+
+.education-name{
+    margin-bottom: 5px;
+    font-style: italic;
+}
+/* Skills - END*/
