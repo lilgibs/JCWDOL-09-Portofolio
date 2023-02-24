@@ -158,6 +158,10 @@ nav ul li a:hover{
     display: flex;
 }
 
+.education-box:hover{
+    background-color: #40739e;
+}
+
 .education-box img{
     height: 100px;
 }
@@ -190,3 +194,13 @@ nav ul li a:hover{
     font-style: italic;
 }
 /* Education - END*/
+
+#skill{
+    padding: 80px;
+    color:#353b48;
+}
+
+#skill .sub-title{
+    text-align: center;
+    text-decoration-color: #dcdde1;
+}
