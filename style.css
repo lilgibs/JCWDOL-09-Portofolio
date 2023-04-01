@@ -204,3 +204,14 @@ nav ul li a:hover{
     text-align: center;
     text-decoration-color: #dcdde1;
 }
+
+.skill-section{
+
+}
+
+.skill-box{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    background-color: #40739e;
+}
